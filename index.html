@@ -11,62 +11,48 @@
     <title>Micaella Furlan Closet │ Site</title>
 </head>
 <body>
-    <div class="background">
-        <header>
-            <div class="logo">
-                <img src="/img/furlan-closet-logo.jpg" alt="">
-            </div><!--logo-->
-
-            <div class="cabeçalho-link">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Destaque</a>
-                </li>
-                <li>
-                    <a href="#">Novo</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
-                </li>
-            </div><!--cabeçalho-link-->
+        <header class="header">
+            <div class="background">
+                
+                <div class="menu">
+                    <div class="logo">
+                        <img src="./img/furlan-closet-logo.jpg" alt="">
+                    </div>
+                    <label class="hamburger">
+                        <input type="checkbox" id="menuToggle">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="menu-aberto">
+                    <nav class="nav-menu">
+                        <a href="#inicio">INÍCIO</a>
+                        <a href="#sobre">NOVOS</a>
+                        <a href="#servicos">DESTAQUES</a>
+                        <a href="#contato">CONTATO</a>
+                    </nav>
+                </div>
+                <div id="Meio">
+                    <h1>VISTA-SE</h1>
+                    <h1>E BRILHE!</h1>
+                    <p>Novas cores, agora também
+                    disponível no tamanho GG.</p>
+                    <button>Novas coleção</button>
+                </div><!--Meio-->
+            </div>
         </header>
+    <!--Fim Header-->
 
-        <div class="Meio">
-            <h1>VISTA-SE</h1>
-            <h1>E BRILHE!</h1>
-            <P>Novas cores, agora também disponível no tamanho GG</P>
-            <button>Novas coleção</button>
-        </div><!--Meio-->
-    </div><!--background-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <main>
+        <div class="destaque">
+            
+        </div>
+    </main>
+    <script src="header.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html> 
