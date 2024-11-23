@@ -4,8 +4,11 @@
     padding: 0;
     font-family: 'Poppins';
 }
+.ctn-geral{
+    background-image: url(/img/bg-4.png);
+}
 .background{
-    background-image: url(img/bg-1.jpg);
+    background-image: url(/img/bg-mulher.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -13,11 +16,8 @@
     max-width: 100%;
     height: 100vh;
 }
-body{
-    background-color: #F8F4F1;
-    
-}
 .header {
+    background-color: #9fd1d8c4 ;
     user-select: none;
     width: 100%;
     display: flex;
@@ -67,7 +67,7 @@ body{
 
 /* Menu Navegação */
 .menu-aberto {
-    background-color: #F8F4F1;
+    background-color: #9fd1d8c4 ;
     position: fixed;
     left: 0;
     top: 0;
@@ -115,7 +115,6 @@ body{
 }
 .logo {
     width: 100%;
-
 }
 .logo img {
     padding: 30px;
@@ -175,54 +174,277 @@ body{
     width: 35px;
     height: 35px;
     border: none;
+    cursor: pointer;
 }
 
 /* Novidades */
-.news{
-    background-image: url(./img/bg-4.png);
-}
 .card-container{
-    background-image: url(./img/bg-4.png);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+.title-novi{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 40px;
+    padding-top: 250px;
+}
+.sub-title{
+    position: relative;
+    top: -10px;
+    z-index: 99;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    font-size: 18px;
+    background: #A0C9F5;
+    color: #000000;
+}
+.box{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: #0000002c solid .5px; 
+}
+.box  img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+.info-box{
+    margin-left: 10px;
+}
+.info-box h3{
+    font-size: 20px;
+
+}
+.info-box p{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.3;
+    width: 100%;
+}
+
+/* Desquates */
+.container{
     max-width: 1680px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
-    gap: 50px;
+    min-height: 95vh;
 }
-.title-novi{
-    text-align: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    padding-top: 150px;
-}
-.sub-title{
-    justify-content: center;
-    text-align: center;
-    line-height: 5px;
-}
-.box{
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: #0000002c solid .5px;
-}
-.box  img{
+.content{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    padding: 0 2%;
     width: 100%;
-    height: auto;
-    border-radius: 0px 0px 0px 0px;
+    min-height: 800px;
 }
+.titulo{
+    padding-top: 350px;
+    width: 100%;
+    min-height: 250px;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    color: #000000;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background: #17203F;
+    position: relative;
+    top: 40px;
+}
+#Service .box img{
+    width: 300px;
+    height: auto;
+
+}
+#Service .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: -120px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+    padding-top: 100px;
+}
+#Service .box{
+    width: 80%;
+    border-radius: 100px;
+
+}
+#Service .container input[type=radio]{
+    display: none;
+}
+#Service .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: -120px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#Service .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+#Service .container .card button{
+    position: absolute;
+    bottom: 10px;
+    z-index: 9;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#Service .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+/* Footer */
+#contato {
+    background-color: #000000;
+    padding: 3rem 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    padding: 20px;
+}
+.footer-logo img{
+    width: 150px;
+    border-radius: 100px;
+}
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-column {
+    text-align: right;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.social-links a i {
+    margin-right: 0.5rem;
+}.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.social-links a i {
+    margin-right: 0.5rem;
+}.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
 
 
 /* Responsividade */
 @media screen and (max-width: 1024px) {
     .background{
-        background-image: url(./img/bg-mobile.jpg);
+        background-image: url(./img/Bg-mobile.png);
         background-repeat: no-repeat;
-        width: 100%;
+        position: relative;
         height: 100vh;    
+    }
+    .header{
+        background-color: #9fd1d8c4 ;
     }
     .hamburger{
         position: fixed;
@@ -261,17 +483,13 @@ body{
         padding: 0.8rem 2rem;
     }
 
-    /* Novidades */
+    /* destaque */
     .card-container{
-        background-image: url(./img/bg-mobile.jpg);
-        max-width: 1680px;
-        margin: 0 auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 90vh;
         gap: 50px;
-        padding-top: 100px;
+        padding-top: 90px;
+        padding-bottom: .5px;
+        width: 90%;
+        gap: 20px;
     }
     .title-novi{
         font-size: 35px;
@@ -282,15 +500,16 @@ body{
         border-radius: 5px;
         border: #0000002c solid .5px;
     }
-
-
 }
 @media screen and (max-width: 728px) {
     .background{
-        background-image: url(./img/bg-mobile.jpg);
-        background-repeat: no-repeat;background-repeat: no-repeat;
+        background-image: url(./img/Bg-mobile.png);
+        background-repeat: no-repeat;
         position: relative;
         height: 100vh;    
+    }
+    .header{
+        background-color: #9fd1d8c4 ;
     }
     .nav-menu {
         gap: 1rem;
@@ -301,7 +520,6 @@ body{
         font-weight: 550;
         padding-bottom: 10px;
     }
-
     .logo img {
         height: 100px;
     }
@@ -323,13 +541,54 @@ body{
     #Meio button {
         font-size: 0.9rem;
         padding: 0.8rem 2rem;
+    }
+    .card-container{
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+        gap: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .info-box{
+        margin-left: 5px;
+    }
+    .info-box h3{
+        font-size: 20px;
+    
+    }
+    .info-box p{
+        color: #666;
+        font-size: 15px;
+        line-height: 1.3;
+        width: 100%;
+    }
+    .box{
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: #0000002c solid .5px;
+    }
+    .box  img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0px 0px;
+    }
+    #Service .container .card{
+        width: 50%;
+        top: -200px;
+        padding-top: 10px;
     }
 }
 @media screen and (max-width: 628) {
     .background{
-        background-image: url(./img/ffffc.cpp.png);
+        background-image: url(./img/Bg-mobile.png);
         background-repeat: no-repeat;
+        position: relative;
         height: 100vh;    
+    }
+    .header{
+        background-color: #9fd1d8c4 ;
     }
     .nav-menu {
         gap: 1rem;
@@ -340,7 +599,6 @@ body{
         font-weight: 550;
         padding-bottom: 10px;
     }
-
     .logo img {
         height: 100px;
     }
@@ -362,6 +620,45 @@ body{
     #Meio button {
         font-size: 0.9rem;
         padding: 0.8rem 2rem;
+    }
+    .card-container{
+        max-width: 1680px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+        gap: 50px;
+        padding-top: 100px;
+    }
+    .info-box{
+        margin-left: 5px;
+    }
+    .info-box h3{
+        font-size: 20px;
+    
+    }
+    .info-box p{
+        color: #666;
+        font-size: 15px;
+        line-height: 1.3;
+        width: 100%;
+    }
+    .box{
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: #0000002c solid .5px;
+    }
+    .box  img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0px 0px;
+    }
+    #Service .container .card{
+        width: 50%;
+        top: -200px;
+        padding-top: 10px;
     }
 }
 
